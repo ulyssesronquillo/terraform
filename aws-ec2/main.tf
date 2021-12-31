@@ -13,7 +13,7 @@ provider "aws" {
 
 resource "aws_spot_instance_request" "rtmp-server" {
   ami                           = "ami-09e67e426f25ce0d7"
-  spot_price                    = "0.0031"
+  spot_price                    = "0.0037"
   wait_for_fulfillment          = "true"
   key_name                      = "servers"
   instance_type                 = "t3.micro"
