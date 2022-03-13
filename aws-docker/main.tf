@@ -20,7 +20,7 @@ resource "aws_spot_instance_request" "docker" {
   subnet_id                   = "subnet-0f5c2aa3c56ca736d"
   security_groups             = ["sg-04b356aadbe0afa78"]
   associate_public_ip_address = "true"
-  user_data = <<EOF
+  user_data                   = <<EOF
   #!/bin/bash
   hostnamectl set-hostname docker
   EOF
